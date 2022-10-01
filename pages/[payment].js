@@ -77,13 +77,7 @@ export default function Payment(props) {
         <div>
             <Nav elements = {elements}/>
         </div>
-        <div className="App">
-            {clientSecret && (
-                <Elements options={options} stripe={stripePromise}>
-                    <CheckoutForm />
-                </Elements>
-            )}
-        </div>
+  
         </div>
     )
 }
